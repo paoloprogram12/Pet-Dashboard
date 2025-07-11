@@ -43,7 +43,18 @@ struct MainTabView: View {
                     }
                     .tag(4)
             }
+            Button {
+                
+            } label: {
+                Image(systemName: "house.circle.fill")
+                    .tint(Color(.white))
+                    .font(.title)
+            }
+            .frame(width: 50, height: 50)
+            .background(Color("mainColor"))
+            .clipShape(Circle())
         }
+        .ignoresSafeArea()
     }
 }
 
