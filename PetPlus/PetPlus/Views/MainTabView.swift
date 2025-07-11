@@ -24,7 +24,7 @@ struct MainTabView: View {
                         Label("Exercise", systemImage: ("figure.run.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
-                    .tag(0)
+                    .tag(1)
                 Spacer()
                     .tabItem {
                         EmptyView()
@@ -32,10 +32,16 @@ struct MainTabView: View {
                     .tag(2)
                 DashboardView()
                     .tabItem {
-                        Label("Services", systemImage: ("person.crop.fill.badge.exclam"))
+                        Label("Services", systemImage: ("magnifyingglass.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
-                    .tag(0)
+                    .tag(3)
+                DashboardView()
+                    .tabItem {
+                        Label("Profile", systemImage: ("person.crop.fill.badge.exclam"))
+                            .foregroundColor(Color("mainColor"))
+                    }
+                    .tag(4)
             }
         }
     }
