@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State private var selection: Int = 0
     var body: some View {
-        Text("Login to PetPlus!")
-            .font(.custom("Poppins-Medium", size: 32))
+        ZStack(alignment: .bottom) {
+            TabView(selection: $selection) {
+                // TODO: Replace dashboard views with custom views
+                DashboardView()
+                    .tabItem {
+                        Label("Food", systemImage: ("fork.knife.circle.fill"))
+                            .foregroundColor(Color("mainColor"))
+                    }
+                    .tag(0)
+                DashboardView()
+                    .tabItem {
+                        Label("Exercise", systemImage: ("fork.knife.circle.fill"))
+                            .foregroundColor(Color("mainColor"))
+                    }
+                    .tag(0)
+            }
+        }
     }
 }
+
+#Preview {
+    MainTabView()
+}
+
 
 #Preview {
     MainTabView()
