@@ -38,7 +38,7 @@ struct MainTabView: View {
                     .tag(3)
                 Text("Profile")
                     .tabItem {
-                        Label("Profile", systemImage: ("person.crop.fill.badge.exclam"))
+                        Label("Profile", systemImage: ("person.crop.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
                     .tag(4)
