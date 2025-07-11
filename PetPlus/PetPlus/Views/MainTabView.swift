@@ -21,10 +21,15 @@ struct MainTabView: View {
                     .tag(0)
                 DashboardView()
                     .tabItem {
-                        Label("Exercise", systemImage: ("fork.knife.circle.fill"))
+                        Label("Exercise", systemImage: ("figure.run.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
                     .tag(0)
+                Spacer()
+                    .tabItem {
+                        EmptyView()
+                    }
+                    .tag(2)
             }
         }
     }
