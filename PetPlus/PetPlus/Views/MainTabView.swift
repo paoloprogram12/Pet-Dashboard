@@ -30,6 +30,12 @@ struct MainTabView: View {
                         EmptyView()
                     }
                     .tag(2)
+                DashboardView()
+                    .tabItem {
+                        Label("Services", systemImage: ("person.crop.fill.badge.exclam"))
+                            .foregroundColor(Color("mainColor"))
+                    }
+                    .tag(0)
             }
         }
     }
