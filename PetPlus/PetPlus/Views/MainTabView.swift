@@ -54,7 +54,12 @@ struct MainTabView: View {
             .background(Color("mainColor"))
             .clipShape(Circle())
         }
-        .ignoresSafeArea()
+        .ignoresSafeArea(.keyboard)
+        .onChange(of: selection, perform: { [selection] newValue in
+            if newValue == 2 {
+                self.selection = selection
+            }
+        })
     }
 }
 
