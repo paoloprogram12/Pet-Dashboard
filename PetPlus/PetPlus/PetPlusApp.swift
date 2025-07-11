@@ -25,7 +25,7 @@ struct PetPlusApp: App {
 
     var body: some Scene {
         WindowGroup {
-            DashboardView()
+            MainTabView()
         }
 //        .modelContainer(sharedModelContainer)
     }

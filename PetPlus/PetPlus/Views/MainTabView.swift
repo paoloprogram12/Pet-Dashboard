@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DashboardView: View {
+struct MainTabView: View {
     var body: some View {
         Text("Login to PetPlus!")
             .font(.custom("Poppins-Medium", size: 32))
@@ -15,5 +15,5 @@ struct DashboardView: View {
 }
 
 #Preview {
-    DashboardView()
+    MainTabView()
 }
