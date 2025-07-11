@@ -13,13 +13,13 @@ struct MainTabView: View {
         ZStack(alignment: .bottom) {
             TabView(selection: $selection) {
                 // TODO: Replace dashboard views with custom views
-                DashboardView()
+                Text("Food")
                     .tabItem {
                         Label("Food", systemImage: ("fork.knife.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
                     .tag(0)
-                DashboardView()
+                Text("Exercise")
                     .tabItem {
                         Label("Exercise", systemImage: ("figure.run.circle.fill"))
                             .foregroundColor(Color("mainColor"))
@@ -30,13 +30,13 @@ struct MainTabView: View {
                         EmptyView()
                     }
                     .tag(2)
-                DashboardView()
+                Text("Services")
                     .tabItem {
                         Label("Services", systemImage: ("magnifyingglass.circle.fill"))
                             .foregroundColor(Color("mainColor"))
                     }
                     .tag(3)
-                DashboardView()
+                Text("Profile")
                     .tabItem {
                         Label("Profile", systemImage: ("person.crop.fill.badge.exclam"))
                             .foregroundColor(Color("mainColor"))
